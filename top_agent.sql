@@ -9,8 +9,5 @@ SELECT
             JOIN Employee e 
                 ON c.SupportRepId = e.EmployeeId
                     GROUP BY e.EmployeeId
-                    ORDER BY "Total Sales" ASC
-                    LIMIT 1
-                  
-                  
-                    
+                    ORDER BY "Total Sales" DESC
+                    LIMIT 1;              

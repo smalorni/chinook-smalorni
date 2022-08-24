@@ -5,6 +5,9 @@ SELECT
    c.FirstName ||" "|| c.LastName as "Customer Name",
    c.Country,
    e.FirstName ||" "|| e.LastName as "Sale Agent Name"
-    FROM Invoice i, Customer c, Employee e 
-        WHERE i.CustomerId = c.CustomerId AND c.SupportRepId = e.EmployeeId
-        ORDER BY i.Total DESC
+    FROM Invoice i 
+        JOIN Customer c
+            ON c.CustomerId = i.CustomerId
+        JOIN Employee e 
+            ON e.EmployeeId = c.SupportRepId
+        ORDER BY i.Total DESC;

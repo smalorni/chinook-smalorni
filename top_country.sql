@@ -6,4 +6,4 @@ SELECT
         FROM Invoice i
             GROUP BY BillingCountry
                 ORDER BY 2 DESC
-                LIMIT 1
+                LIMIT 1;

@@ -8,5 +8,4 @@ SELECT
                 ON t.TrackId = il.TrackId
                     GROUP BY t.Name
                         ORDER BY "Number of Purchases" DESC
-                        LIMIT 5;
-                       
+                        LIMIT 5;                     

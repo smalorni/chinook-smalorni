@@ -9,6 +9,5 @@ SELECT
                 JOIN Track t 
                     ON t.TrackId = il.TrackId
                         WHERE strftime("%Y", InvoiceDate) = "2013"
-                            GROUP BY t.TrackId
-                            ORDER BY "Track Purchased" DESC; 
-              
+                            GROUP BY t.Name
+                            ORDER BY "Track Purchased" DESC;           

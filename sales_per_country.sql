@@ -4,4 +4,4 @@ SELECT
     BillingCountry AS "Billing Country",
     SUM(Total) AS "Total Sales"
         FROM Invoice
-            GROUP BY BillingCountry
+            GROUP BY BillingCountry;

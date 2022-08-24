@@ -12,5 +12,4 @@ SELECT
                 WHERE strftime("%Y", InvoiceDate) = "2009"
                     GROUP BY e.EmployeeId
                     ORDER BY i.Total DESC
-                    LIMIT 1;
-                    
+                    LIMIT 1;             

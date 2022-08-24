@@ -2,4 +2,4 @@
 
 SELECT InvoiceId, COUNT(*) as "List of Items"
         FROM InvoiceLine il 
-        GROUP BY il.InvoiceId
+        GROUP BY il.InvoiceId;

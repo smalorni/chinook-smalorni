@@ -2,4 +2,4 @@
 SELECT COUNT(*) AS "Number of Invoices",
     i.BillingCountry
         FROM Invoice i
-            GROUP BY i.BillingCountry
+            GROUP BY i.BillingCountry;

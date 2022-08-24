@@ -6,5 +6,5 @@ SELECT
             FROM Playlist p 
                 JOIN PlaylistTrack pt
                     ON p.PlayListId = pt.PlaylistId
-                        GROUP BY p.Name
+                        GROUP BY p.Name;
 

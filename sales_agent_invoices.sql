@@ -5,5 +5,4 @@ SELECT
     i.InvoiceId
     FROM Invoice i, Employee e, Customer c
         WHERE i.CustomerId = c.CustomerId AND c.SupportRepId = e.EmployeeId
-        ORDER BY e.EmployeeId DESC
-        
+        ORDER BY e.EmployeeId DESC; 

@@ -8,4 +8,4 @@ SELECT
                 ON i.CustomerId = c.CustomerId
             JOIN Employee e 
                 ON c.SupportRepId = e.EmployeeId
-                    GROUP BY e.EmployeeId
+                    GROUP BY e.EmployeeId;

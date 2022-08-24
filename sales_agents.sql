@@ -2,6 +2,7 @@
 
 SELECT
     e.EmployeeId,
-    e.FirstName ||" "|| e.LastName as "Full Name"
+    e.FirstName ||" "|| e.LastName as "Full Name",
+    e.Title
     FROM Employee e 
         WHERE e.Title = "Sales Support Agent";
